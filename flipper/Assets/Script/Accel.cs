@@ -12,7 +12,7 @@ public class Accel : MonoBehaviour
     {
         rb = other.GetComponent<Rigidbody>();
 
-        Vector3 dir = transform.right;
+        Vector3 dir = transform.forward;
         rb.AddForce(dir * force, ForceMode.Impulse);
 
 
