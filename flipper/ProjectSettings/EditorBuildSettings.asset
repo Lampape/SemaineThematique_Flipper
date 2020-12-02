@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Fps_Pinbal.unity
+    guid: 9c1d14ff8bea51744866ea6453d5a36d
   m_configObjects: {}
