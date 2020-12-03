@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EventFolder" id="{624c036d-a844-4885-9b8a-ce97372f9c76}">
+		<property name="color">
+			<value>Red</value>
+		</property>
+		<property name="name">
+			<value>Ennemi</value>
+		</property>
+		<relationship name="folder">
+			<destination>{2bc6d283-45e7-4607-846d-66147ec7ca4f}</destination>
+		</relationship>
+	</object>
+</objects>
