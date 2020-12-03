@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\poule\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\poule\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_flipper.768860299.00" t="ExcludeRecursive" />
+    <e p="D:\COURS\2GDA Ican 2020-2021\Semaine Theam\30_11_2020\Flipper_Unity\SemaineThematique_Flipper\flipper" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="_Pinball" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="License" t="Include">
+              <e p="LICENSE-2.0.txt" t="Include" />
+              <e p="OFL.txt" t="Include" />
+              <e p="ubuntu-font-licence-1.0.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="BallController.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+            <e p="Services" t="Include">
+              <e p="AppInfo.cs" t="Include" />
+              <e p="PremiumFeatures" t="Include">
+                <e p="AchievementUnlocker.cs" t="Include" />
+                <e p="AdDisplayer.cs" t="Include" />
+                <e p="AndroidBackButtonHandler.cs" t="Include" />
+                <e p="InAppPurchaser.cs" t="Include" />
+                <e p="PremiumFeaturesManager.cs" t="Include" />
+                <e p="RatingRequester.cs" t="Include" />
+                <e p="ScoreReporter.cs" t="Include" />
+                <e p="ScreenshotSharer.cs" t="Include" />
+              </e>
+              <e p="ScoreManager.cs" t="Include" />
+              <e p="SoundManager.cs" t="Include" />
+              <e p="Utilities.cs" t="Include" />
+            </e>
+            <e p="UIManager.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Materail" t="Include">
+          <e p="AlwaysVisible.shader" t="Include" />
+        </e>
+        <e p="Script" t="Include">
+          <e p="Accel.cs" t="Include" />
+          <e p="BombePoing.cs" t="Include" />
+          <e p="CameraControle.cs" t="Include" />
+          <e p="DestroyOnEnterTrigger.cs" t="Include" />
+          <e p="EnemiesMouvement.cs" t="Include" />
+          <e p="FlipDuFlipper.cs" t="Include" />
+          <e p="FulguroPoing.cs" t="Include" />
+          <e p="KillEnemie.cs" t="Include" />
+          <e p="MovementAxes.cs" t="Include" />
+          <e p="PoiintGravitation.cs" t="Include" />
+          <e p="SetColorOnPressKey.cs" t="Include" />
+          <e p="SpawnOnClic.cs" t="Include" />
+        </e>
+      </e>
+      <e p="flipper.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

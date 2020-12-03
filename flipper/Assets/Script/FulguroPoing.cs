@@ -16,7 +16,7 @@ public class FulguroPoing : MonoBehaviour
               GameObject delayObject = Instantiate(laBombe, Gauche.transform.position, Quaternion.identity);
               Destroy(delayObject,1.0f);
         }
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             GameObject delayObject = Instantiate(laBombe, Droite.transform.position, Quaternion.identity);
             Destroy(delayObject,1.0f);
