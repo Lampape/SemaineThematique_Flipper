@@ -41,9 +41,9 @@
         </e>
         <e p="Script" t="Include">
           <e p="Accel.cs" t="Include" />
+          <e p="Billevelocity.cs" t="Include" />
           <e p="BombePoing.cs" t="Include" />
           <e p="CameraControle.cs" t="Include" />
-          <e p="DestroyOnEnterTrigger.cs" t="Include" />
           <e p="EnemiesMouvement.cs" t="Include" />
           <e p="FlipDuFlipper.cs" t="Include" />
           <e p="FulguroPoing.cs" t="Include" />
