@@ -13,4 +13,9 @@ public class CameraControle : MonoBehaviour
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + mouseInput.x,
             transform.rotation.eulerAngles.z);
     }
+
+    public void AdjustSensitivity(float newSensitivity)
+    {
+        mouseSensitivity = newSensitivity;
+    }
 }
