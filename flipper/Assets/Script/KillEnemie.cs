@@ -5,6 +5,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
+
+
+
+
 public class KillEnemie : MonoBehaviour
 {
     public int scoreGiven = 5;
@@ -13,7 +17,12 @@ public class KillEnemie : MonoBehaviour
     public Text scoreText;
     public Text combosText;
     public int timeGiven;
-
+    
+    
+    private void Start()
+    {
+        scoreTotal = 0;
+    }
     public void Update()
     {
         scoreText.text = "score : " + scoreTotal;
