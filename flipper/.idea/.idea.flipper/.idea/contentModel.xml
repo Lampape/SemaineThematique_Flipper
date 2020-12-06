@@ -162,11 +162,13 @@
           <e p="CollisionSound.cs" t="Include" />
           <e p="FlickeringLight.cs" t="Include" />
           <e p="GameOver.cs" t="Include" />
+          <e p="HideCursor.cs" t="Include" />
           <e p="KillEnemie.cs" t="Include" />
           <e p="LookAt.cs" t="Include" />
           <e p="PointGravitation.cs" t="Include" />
           <e p="ReachScoreData.cs" t="Include" />
           <e p="SceneChange.cs" t="Include" />
+          <e p="ShowCursor.cs" t="Include" />
           <e p="SpawnOnClic.cs" t="Include" />
           <e p="SpawnOnPass.cs" t="Include" />
           <e p="storeScore.cs" t="Include" />
