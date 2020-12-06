@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4376068126312129585}
   - component: {fileID: 4376068126312129584}
   - component: {fileID: 4376068126312129589}
-  - component: {fileID: 4376068126312129576}
+  - component: {fileID: 1425592891487294078}
   m_Layer: 0
   m_Name: LeBodyMan
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4376068126312129599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.14999962, y: 2.56, z: -6.120316}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.05, y: 1.05, z: 1.05}
   m_Children:
   - {fileID: 4376068126681856380}
   - {fileID: 4376068126595146063}
@@ -99,10 +99,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
+  m_Radius: 0.33994812
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.000000056766332, y: 0, z: -0.16005199}
 --- !u!114 &4376068126312129589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,19 +116,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 5
---- !u!114 &4376068126312129576
-MonoBehaviour:
+--- !u!136 &1425592891487294078
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4376068126312129599}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c22fcaddca5ed843b210681b9cdf43c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 2
+  m_Radius: 0.6357922
+  m_Height: 3.1913118
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: -0.16203587}
 --- !u!1 &4376068126595146062
 GameObject:
   m_ObjectHideFlags: 0
