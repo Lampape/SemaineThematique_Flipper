@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class KillEnemie : MonoBehaviour
 {
     public int scoreGiven = 5;
-    public int scoreTotal;
+    public static  int scoreTotal;
     private int killCount;
     public Text scoreText;
     public Text combosText;

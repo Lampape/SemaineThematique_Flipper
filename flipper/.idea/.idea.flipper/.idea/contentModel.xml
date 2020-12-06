@@ -44,13 +44,16 @@
           <e p="Billevelocity.cs" t="Include" />
           <e p="CameraControle.cs" t="Include" />
           <e p="FlickeringLight.cs" t="Include" />
+          <e p="GameOver.cs" t="Include" />
           <e p="KillEnemie.cs" t="Include" />
           <e p="LookAt.cs" t="Include" />
           <e p="PointGravitation.cs" t="Include" />
+          <e p="ReachScoreData.cs" t="Include" />
           <e p="SceneChange.cs" t="Include" />
           <e p="SpawnOnClic.cs" t="Include" />
+          <e p="storeScore.cs" t="Include" />
+          <e p="TimerGain.cs" t="Include" />
         </e>
-        <e p="TimerGain.cs" t="Include" />
       </e>
       <e p="flipper.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
