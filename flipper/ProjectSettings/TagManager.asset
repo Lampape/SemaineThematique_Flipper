@@ -6,6 +6,9 @@ TagManager:
   tags:
   - BilleFlipper
   - Flipper
+  - Dead
+  - Gold
+  - LaBille
   layers:
   - Default
   - TransparentFX

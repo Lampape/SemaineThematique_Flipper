@@ -51,6 +51,7 @@
           <e p="ReachScoreData.cs" t="Include" />
           <e p="SceneChange.cs" t="Include" />
           <e p="SpawnOnClic.cs" t="Include" />
+          <e p="SpawnOnPass.cs" t="Include" />
           <e p="storeScore.cs" t="Include" />
           <e p="TimerGain.cs" t="Include" />
         </e>

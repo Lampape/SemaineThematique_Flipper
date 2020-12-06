@@ -12,11 +12,10 @@ public class KillEnemie : MonoBehaviour
     private int killCount;
     public Text scoreText;
     public Text combosText;
-    public static  int timeGiven = 15;
+    public int timeGiven;
 
     public void Update()
     {
-        scoreTotal = scoreGiven * killCount * Billevelocity.velocityScore;
         scoreText.text = "score : " + scoreTotal;
         combosText.text = "combos : " + Billevelocity.velocityScore;
     }
@@ -28,7 +27,8 @@ public class KillEnemie : MonoBehaviour
             
             killCount++;
             Destroy(other.gameObject);
-            TimerGain.timerTotal += timeGiven * killCount;
+            TimerGain.timerTotal += timeGiven ;
+            scoreTotal += scoreGiven * killCount * Billevelocity.velocityScore;
         }
     }
 }
