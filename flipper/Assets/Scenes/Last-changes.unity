@@ -1426,6 +1426,8 @@ GameObject:
   - component: {fileID: 234396076}
   - component: {fileID: 234396077}
   - component: {fileID: 234396078}
+  - component: {fileID: 234396069}
+  - component: {fileID: 234396079}
   m_Layer: 0
   m_Name: Bille (2)
   m_TagString: LaBille
@@ -1449,6 +1451,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &234396069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234396067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Boule/boule_aura
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 100
 --- !u!135 &234396070
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1691,6 +1716,18 @@ MonoBehaviour:
   target: {fileID: 8835042}
   maxVelocity: 6000
   multiplicationFactor: 1
+--- !u!114 &234396079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234396067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13996e338129ce44983ba5965ea9e2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &242342013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8421450601814588877, guid: 0886d46d1f333c54780715e3024dcdbe, type: 3}
@@ -10202,6 +10239,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92da120a216a58141860ee94c428f9f4, type: 3}
+--- !u!1 &1463938301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4376068126312129599, guid: 24b13f32b33949b4881aec15453b6cf8, type: 3}
+  m_PrefabInstance: {fileID: 4376068126451546712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1463938302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463938301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: LaBille
+  Event: event:/Joueur/joueur_collision_boule
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &1469230345 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4286036440757121274, guid: 92da120a216a58141860ee94c428f9f4, type: 3}
@@ -13198,6 +13263,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92da120a216a58141860ee94c428f9f4, type: 3}
+--- !u!1 &1892209743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4376068126754498171, guid: 24b13f32b33949b4881aec15453b6cf8, type: 3}
+  m_PrefabInstance: {fileID: 4376068126451546712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1892209744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892209743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 1049363739}
+  ListenerNumber: -1
 --- !u!4 &1900656599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4286036440757121274, guid: 92da120a216a58141860ee94c428f9f4, type: 3}
@@ -14187,6 +14271,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2507697799371705429, guid: 24b13f32b33949b4881aec15453b6cf8, type: 3}
+      propertyPath: eventNamePath
+      value: event:/Joueur/joueur_renvoi_boule_moyen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2507697799594877610, guid: 24b13f32b33949b4881aec15453b6cf8, type: 3}
+      propertyPath: eventNamePath
+      value: event:/Joueur/joueur_renvoi_boule_faible
+      objectReference: {fileID: 0}
     - target: {fileID: 4376068126312129587, guid: 24b13f32b33949b4881aec15453b6cf8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.14999962
@@ -14234,6 +14326,14 @@ PrefabInstance:
     - target: {fileID: 4376068126312129599, guid: 24b13f32b33949b4881aec15453b6cf8, type: 3}
       propertyPath: m_Name
       value: LeBodyMan
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376068126754498172, guid: 24b13f32b33949b4881aec15453b6cf8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376068127767867659, guid: 24b13f32b33949b4881aec15453b6cf8, type: 3}
+      propertyPath: eventNamePath
+      value: event:/Joueur/joueur_renvoi_boule_fort
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24b13f32b33949b4881aec15453b6cf8, type: 3}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2130961924527830105}
   - component: {fileID: 2130961924527830104}
   - component: {fileID: 2685525855030325531}
+  - component: {fileID: 4832327212207615129}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: BilleFlipper
@@ -111,6 +112,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 3777845756002931219, guid: ce1875ce3a3d1c045b5458a4e093e0e4, type: 3}
+--- !u!114 &4832327212207615129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130961924527830103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Cible/cible_destruction
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &3010698665337643562
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,8 @@ public class Accel : MonoBehaviour
     private float comboForce; //force ajoutée par le combo au renvoi de la bille
     private float totalForce; //force totale du renvoi de la bille
     
-
+    public string eventNamePath;
+    
     private void OnTriggerEnter(Collider other)
     {
         colliderEnterCount++;
@@ -33,22 +34,22 @@ public class Accel : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             rb.AddForce(dirGauche * totalForce, ForceMode.Impulse);
-
             if (!ImpulseGiven) 
             {
                 Billevelocity.velocityScore += comboGain;
                 ImpulseGiven = true;
+                FMODUnity.RuntimeManager.PlayOneShot(eventNamePath);
             }
         }
 
         if (Input.GetKey(KeyCode.Z))
         {
             rb.AddForce(dirDroite * totalForce, ForceMode.Impulse);
-
             if (!ImpulseGiven)
             {
                 Billevelocity.velocityScore += comboGain;
                 ImpulseGiven = true;
+                FMODUnity.RuntimeManager.PlayOneShot(eventNamePath);
             }
         }
     }
@@ -72,5 +73,10 @@ public class Accel : MonoBehaviour
 
         comboForce = Billevelocity.velocityScore + 1;
         totalForce = force * comboForce;
+        
+        if (Input.GetKeyDown(KeyCode.A))
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Joueur/joueur_bras_gauche");
+        if (Input.GetKeyDown(KeyCode.Z))
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Joueur/joueur_bras_droit");
     }
 }
