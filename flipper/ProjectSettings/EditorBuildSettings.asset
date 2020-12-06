@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Fps_Pinbal.unity
-    guid: 9c1d14ff8bea51744866ea6453d5a36d
+    path: Assets/Scenes/Last-changes.unity
+    guid: 711a9eddd9133ba41bfe3f90e8b4e286
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: c3a4a36da82313e4abde647d525edf66
   m_configObjects: {}

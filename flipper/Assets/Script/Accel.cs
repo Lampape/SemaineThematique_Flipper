@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class Accel : MonoBehaviour
 {
-    private static bool ImpulseGiven ;
-    private static int colliderEnterCount ;
-    
-    
     private Rigidbody rb;
-    public float force = 2.0f; //force du renvoi de la bille
+    private static bool ImpulseGiven ;
+
+    public int comboGain = 0; // valeur ajoutée au combo quand la bille est renvoyée
+    private static int colliderEnterCount ; // aide à déterminer si la bille est dans une zone de détection
+
     public float steerPower = 1f; //détermine à quel point la trajectoire de la bille est modifiée vers la gauche ou la droite du joueur
-    public float velocityfloat;
-    public float combosVelocityForce;
-    public int gainVelocity = 0; // valeur qui donne la velocité a la balle et l'effet combos
+    public float force = 2.0f; //force ajoutée par la zone de détection au renvoi de la bille
+
+    private float comboForce; //force ajoutée par le combo au renvoi de la bille
+    private float totalForce; //force totale du renvoi de la bille
+    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        colliderEnterCount++;
+    }
+
 
     private void OnTriggerStay(Collider other)
     {
@@ -21,53 +29,48 @@ public class Accel : MonoBehaviour
 
         Vector3 dirDroite = transform.forward + transform.right * steerPower;
         Vector3 dirGauche = transform.forward - transform.right * steerPower;
-        //Vector3 dirFace = transform.forward;
-        //rb.AddForce(dir * force, ForceMode.Impulse);
 
-        if (Input.GetKeyDown(KeyCode.A) && !ImpulseGiven)
-        {
-            rb.AddForce(dirGauche * combosVelocityForce, ForceMode.Impulse);
-            ImpulseGiven = true;
-            Billevelocity.velocityScore += gainVelocity;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Z) && !ImpulseGiven)
-        {
-            rb.AddForce(dirDroite * combosVelocityForce, ForceMode.Impulse);
-            ImpulseGiven = true;
-            Billevelocity.velocityScore += gainVelocity;
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        ImpulseGiven = false;
-        colliderEnterCount--;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        colliderEnterCount++;
-       /*Debug.Log("Collision en cours");
         if (Input.GetKey(KeyCode.A))
         {
-            Billevelocity.velocityScore += gainVelocity;
+            rb.AddForce(dirGauche * totalForce, ForceMode.Impulse);
+
+            if (!ImpulseGiven) 
+            {
+                Billevelocity.velocityScore += comboGain;
+                ImpulseGiven = true;
+            }
         }
 
         if (Input.GetKey(KeyCode.Z))
         {
-            Billevelocity.velocityScore += gainVelocity;
-        }*/
+            rb.AddForce(dirDroite * totalForce, ForceMode.Impulse);
+
+            if (!ImpulseGiven)
+            {
+                Billevelocity.velocityScore += comboGain;
+                ImpulseGiven = true;
+            }
+        }
     }
 
-void Update()
+
+    private void OnTriggerExit(Collider other)
+    {
+        colliderEnterCount--;
+        //ImpulseGiven = false;
+        Debug.Log("comboforce = " + comboForce);
+        Debug.Log("entercount = " + colliderEnterCount);
+    }
+
+
+    void Update()
     {
         if(colliderEnterCount == 0)
         {
             ImpulseGiven = false;
         }
-        combosVelocityForce = force + velocityfloat;
-        velocityfloat = Billevelocity.velocityScore;
+
+        comboForce = Billevelocity.velocityScore + 1;
+        totalForce = force * comboForce;
     }
-
-
 }
