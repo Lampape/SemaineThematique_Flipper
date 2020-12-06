@@ -12,6 +12,7 @@ public class KillEnemie : MonoBehaviour
     private int killCount;
     public Text scoreText;
     public Text combosText;
+    public static  int timeGiven = 15;
 
     public void Update()
     {
@@ -24,8 +25,10 @@ public class KillEnemie : MonoBehaviour
     {
         if (other.CompareTag("BilleFlipper"))
         {
+            
             killCount++;
             Destroy(other.gameObject);
+            TimerGain.timerTotal += timeGiven * killCount;
         }
     }
 }

@@ -10,7 +10,7 @@ public class Billevelocity : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        velocityScore = 0;
+        velocityScore = 1;
 
     }
 
@@ -28,7 +28,7 @@ public class Billevelocity : MonoBehaviour
         
         if (other.CompareTag("Player"))
         {
-            velocityScore = 0;
+            velocityScore = 1;
             Debug.Log("ici la balle a collisioner avec player est la velo est a zero");
         }
     }
