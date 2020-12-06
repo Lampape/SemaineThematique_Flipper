@@ -83,7 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../flipper_fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637428860821293164
+  lastModified: 637428862279607444
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../flipper_fmod/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637428860821278284
+  lastModified: 637428862279607444
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -180,7 +180,7 @@ MonoBehaviour:
   - {fileID: -841509064431505932}
   StringsBanks:
   - {fileID: -3457726842947062614}
-  stringsBankWriteTime: 637428860821293164
+  stringsBankWriteTime: 637428862279607444
   cacheVersion: 5
 --- !u!114 &652176340357662187
 MonoBehaviour:
