@@ -1531,7 +1531,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Boule/boule_aura
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -11675,6 +11675,7 @@ GameObject:
   - component: {fileID: 1638635185}
   - component: {fileID: 1638635184}
   - component: {fileID: 1638635186}
+  - component: {fileID: 1638635187}
   m_Layer: 0
   m_Name: ConditonDeVictoire
   m_TagString: Untagged
@@ -11719,6 +11720,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e681093ea0b1ae4eb38d798515b9bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1638635187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638635183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5052dfdf6635f094a8be93a63f409212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1641633874 stripped
