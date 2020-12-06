@@ -1789,7 +1789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 8835042}
   maxVelocity: 6000
-  multiplicationFactor: 1
+  multiplicationFactor: 0.6
 --- !u!114 &234396079
 MonoBehaviour:
   m_ObjectHideFlags: 0
