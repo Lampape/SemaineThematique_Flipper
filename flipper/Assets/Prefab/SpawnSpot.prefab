@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6020258034164898144}
   - component: {fileID: 2794173578044190975}
   - component: {fileID: -1634145836409651789}
+  - component: {fileID: 7367503391188973868}
   m_Layer: 0
   m_Name: SpawnSpot
   m_TagString: Untagged
@@ -109,4 +110,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnUnit: {fileID: 2130961924527830103, guid: c25bf3d5713348e4daecbccb1f81e9f5, type: 3}
-  coolDown: 5
+  coolDown: 11
+--- !u!114 &7367503391188973868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6712987257478133668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bbb472e402ff3641b98c428bffe2b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 4376068126312129587, guid: 24b13f32b33949b4881aec15453b6cf8, type: 3}
