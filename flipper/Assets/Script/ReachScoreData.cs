@@ -10,8 +10,8 @@ public class ReachScoreData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreText.text = "score : " +storeScore.scoreData;
-        combosText.text = "combos : " + storeScore.combosData;
+        scoreText.text = "Score : " +storeScore.scoreData;
+        combosText.text = "Combos : " + storeScore.combosData;
     }
 
     // Update is called once per frame

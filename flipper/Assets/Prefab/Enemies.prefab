@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2130961924527830106}
   - component: {fileID: 2130961924527830105}
   - component: {fileID: 2130961924527830104}
+  - component: {fileID: 2685525855030325531}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: BilleFlipper
@@ -97,6 +98,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.3975444
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2685525855030325531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130961924527830103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bbb472e402ff3641b98c428bffe2b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 3777845756002931219, guid: ce1875ce3a3d1c045b5458a4e093e0e4, type: 3}
 --- !u!1 &3010698665337643562
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +154,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 2
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -179,7 +193,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1

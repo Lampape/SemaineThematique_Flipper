@@ -35,7 +35,7 @@ public class TimerGain : MonoBehaviour
                 gameOver = true;
                 Debug.Log("game over");
             }
-            timerText.text = "temps restant  ==   " + timerTotal ;
+            timerText.text = "Temps restant  = " + timerTotal ;
         }
         
         
