@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 2130961924527830106}
   - component: {fileID: 2130961924527830105}
   - component: {fileID: 2130961924527830104}
-  - component: {fileID: -8703048496356615052}
-  - component: {fileID: -348202030527719975}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: BilleFlipper
@@ -99,41 +97,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.3975444
   m_Center: {x: 0, y: 0, z: 0}
---- !u!195 &-8703048496356615052
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130961924527830103}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &-348202030527719975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130961924527830103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc5c4c305628aa4fb76a8d993b7cf1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destinationTransorm: {fileID: 4376068126312129587, guid: 24b13f32b33949b4881aec15453b6cf8, type: 3}
 --- !u!1 &3010698665337643562
 GameObject:
   m_ObjectHideFlags: 0
